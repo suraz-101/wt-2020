@@ -21,7 +21,7 @@ body{
     align-items: center;
    
     position: fixed;
-   
+   z-index: 9;
     width: 100%;
 }
 
@@ -156,64 +156,56 @@ body{
 .home .leftcol .logo img{
    
     height: 40px;
-    width: 150px;
-   
+    width: 150px;   
 }
 
 .whyus h3{
     color: #E15352;
     position: relative;
-    background-color: black;
-   
+    background-color: black;  
 }
 
 .whyus h3::before{
     content: '';
-
     height: 1px ;
     width: 40px;
     background-color: white;
     position: absolute;
-
     top: 50%;
-   left: -45px;
+    left: -45px;
 }
 
 .whyus h3::after{
     content: '';
-   
     height: 1px ;
     width: 40px;
     background-color: white;
     position: absolute;
-
     top: 50%;
-   right: -45px;
-    /* top: 20px; */
-
-
+    right: -45px;
 }
 .whyus  p{
     position: relative;
     margin-top: 20px;
     line-height: 3rem;
+    color: lightgray;
  ;
     /* border: 1px solid white; */
 
 
 }
 
-.whyus p::before{
+.whyus p::before,.features p::before{
     content: '';
-    height: 1px ;
+    height: 2px ;
     width: 100px;
     background-color: #E15352;
     position: absolute;
 }
-.whyus p::after{
+.whyus p::after,.features p::after{
     content: '';
        
-    height: 1px ;
+    height: 2px ;
     width: 100px;
     background-color: #E15352;
     position: absolute;
@@ -225,11 +217,134 @@ body{
 
 .whyus
 {
-    padding: 50px 300px;
+    padding: 50px 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    /* height: 80vh; */
     background-color: black;
     color: white;
 }
+
+.whyus .icons i{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: lightgray;
+}
+
+
+
+.whyus .icons .container , .features .icons .container
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.whyus .icon-wrapper .icons .number, .features .icon-wrapper .icons .number
+{
+    color: #B34040;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.whyus .icon-wrapper .icons .name
+{
+    color: #FA9C98;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 10px 0;
+    /* font-weight: bold; */
+}
+
+.features
+{
+    padding: 50px 240px;
+    background: url(../assests/homebackground.jpg) no-repeat;
+    /* filter: blur(8px); */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.features h3{
+    color: #E15352;
+    position: relative;
+    background-color: transparent;  
+}
+
+.features h3::before{
+    content: '';
+    height: 1px ;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: -45px;
+}
+
+.features h3::after{
+    content: '';
+    height: 1px ;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    right: -45px;
+}
+.features  p{
+  
+    position: relative;
+    margin-top: 20px;
+    line-height: 3rem;
+
+ ;
+    /* border: 1px solid white; */
+
+
+}
+
+.features .icon-wrapper .icons .name
+{
+    color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    padding: 10px 0;
+    text-align: center;
+    /* font-weight: bold; */
+}
+.features .icons img{
+   height: 200px;
+   width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: lightgray;
+}
+
+/* .features p::before{
+    content: '';
+    height: 2px ;
+    width: 100px;
+    background-color: #E15352;
+    position: absolute;
+}
+.features p::after{
+    content: '';
+       
+    height: 2px ;
+    width: 100px;
+    background-color: #E15352;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+
+} */
