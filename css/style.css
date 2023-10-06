@@ -195,14 +195,14 @@ body{
 
 }
 
-.whyus p::before,.features p::before{
+.whyus p::before,.features p::before, .corporate p::before{
     content: '';
     height: 2px ;
     width: 100px;
     background-color: #E15352;
     position: absolute;
 }
-.whyus p::after,.features p::after{
+.whyus p::after,.features p::after, .corporate p::after{
     content: '';
        
     height: 2px ;
@@ -261,9 +261,9 @@ body{
     /* font-weight: bold; */
 }
 
-.features
+.features, .corporate
 {
-    padding: 50px 240px;
+   
     background: url(../assests/homebackground.jpg) no-repeat;
     /* filter: blur(8px); */
     background-size: cover;
@@ -272,6 +272,16 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.features
+{
+    padding: 50px 240px;
+}
+
+.corporate
+{
+    padding: 70px 200px;
 }
 .features h3{
     color: #E15352;
@@ -304,7 +314,7 @@ body{
     margin-top: 20px;
     line-height: 3rem;
 
- ;
+ 
     /* border: 1px solid white; */
 
 
@@ -328,6 +338,87 @@ body{
     padding: 20px;
     color: lightgray;
 }
+
+
+.corporate h3{
+    color: #E15352;
+    position: relative;
+    background-color: transparent;  
+}
+
+.corporate h3::before{
+    content: '';
+    height: 1px ;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: -45px;
+}
+
+.corporate h3::after{
+    content: '';
+    height: 1px ;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    right: -45px;
+}
+.corporate  p{
+  
+    position: relative;
+    margin-top: 20px;
+    line-height: 3rem;
+
+}
+
+
+
+
+.corporate .icons .container 
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.corporate .icons img{
+    height: 120px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 20px;
+     color: lightgray;
+ }
+ .corporate .icon-wrapper2
+ {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+     
+ }
+
+ .corporate .icon-wrapper2 .icons2{
+     width: 32%;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+ }
+ .corporate .icon-wrapper2 .icons2 .icon img{
+     height: 100px;
+     width: 100px;
+     border-radius: 10px;
+    
+   
+   
+
+ }
+
+
+
 
 /* .features p::before{
     content: '';
