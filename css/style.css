@@ -159,52 +159,62 @@ body{
     width: 150px;   
 }
 
-.whyus h3, .getstarted h3{
+.heading1 {
     color: #E15352;
     position: relative;
     background-color: black;  
+    padding-top: 50px;
 }
 
-.whyus h3::before,  .getstarted h3::before{
+.heading1::before{
     content: '';
     height: 1px ;
     width: 40px;
     background-color: white;
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: -45px;
+    
 }
 
-.whyus h3::after,  .getstarted h3::after{
+.heading1::after{
     content: '';
     height: 1px ;
     width: 40px;
     background-color: white;
     position: absolute;
-    top: 50%;
+    top: 80%;
     right: -45px;
 }
-.whyus  p{
+.para{
     position: relative;
     margin-top: 20px;
     line-height: 3rem;
     color: lightgray;
  ;
-    /* border: 1px solid white; */
-
+  
 
 }
 
-.whyus p::before,.features p::before, .corporate p::before{
+
+
+ .getstarted .cards .card p{
+     font-size: 13px;
+     color: lightgray;
+     padding-top: 10px;
+     line-height: 1.5rem;
+     /* line-height: 1rem; */
+ }
+
+.para::before,.para2::before{
     content: '';
     height: 2px ;
     width: 100px;
     background-color: #E15352;
     position: absolute;
 }
-.whyus p::after,.features p::after, .corporate p::after{
-    content: '';
-       
+.para::after,.para2::after{
+    content: '';       
     height: 2px ;
     width: 100px;
     background-color: #E15352;
@@ -293,13 +303,13 @@ body{
 {
     padding: 70px 260px;
 }
-.features h3{
+.heading2{
     color: #E15352;
     position: relative;
     background-color: transparent;  
 }
 
-.features h3::before{
+.heading2::before{
     content: '';
     height: 1px ;
     width: 30px;
@@ -309,7 +319,7 @@ body{
     left: -45px;
 }
 
-.features h3::after{
+.heading2::after{
     content: '';
     height: 1px ;
     width: 30px;
@@ -318,14 +328,12 @@ body{
     top: 50%;
     right: -45px;
 }
-.features  p{
+.para2{
   
     position: relative;
     margin-top: 20px;
     line-height: 3rem;
 
- 
-    /* border: 1px solid white; */
 
 
 }
@@ -348,42 +356,6 @@ body{
     padding: 20px;
     color: lightgray;
 }
-
-
-.corporate h3{
-    color: #E15352;
-    position: relative;
-    background-color: transparent;  
-}
-
-.corporate h3::before{
-    content: '';
-    height: 1px ;
-    width: 30px;
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    left: -45px;
-}
-
-.corporate h3::after{
-    content: '';
-    height: 1px ;
-    width: 30px;
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    right: -45px;
-}
-.corporate  p{
-  
-    position: relative;
-    margin-top: 20px;
-    line-height: 3rem;
-
-}
-
-
 
 
 .corporate .icons .container 
@@ -495,19 +467,32 @@ body{
 
      /* background-color: #B34040; */
  }
+ .getstarted .cards2 .card2 .des{
+     height: 20%;
+     /* border: 1px solid red; */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+ }
 
- .getstarted .cards .card h6
+ .getstarted .cards2 .card2 .des .price
+ {
+     width: 70%;
+     display: flex;
+     justify-content: space-evenly;
+     font-size: 10px;
+     color: #FA9C98;
+ }
+
+ .getstarted .cards .card h6, .getstarted .cards2 .card2 h6
  {
     color: #B34040;
     font-size: 13px;
  }
- .getstarted .cards .card p{
-     font-size: 13px;
-     color: lightgray;
-     padding-top: 10px;
-     line-height: 1.5rem;
-     /* line-height: 1rem; */
- }
+
 
  .getstarted .secondpart
  {
@@ -540,37 +525,52 @@ body{
     padding-bottom: 20px;
  }
 
- .getstarted .image-container .description p{
-     
+ .dots
+ {
+     width: 6%;
+     padding: 30px 0;
+     /* border:1px solid white; */
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+ .dot{
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: white;
+ }
 
-    position: relative;
-    margin-top: 20px;
-    line-height: 3rem;
-    color: lightgray;
- 
-    /* border: 1px solid white; */
+ .dots .active
+ {
+    height: 4px;
+    width: 13px;
+    border-radius: 20%;
+    background-color: #B34040;
+ }
+
+ .getstarted .cards2
+ {
+     width: 100%;
+     padding-top: 70px;
+ }
+
+ .getstarted .card2
+ {
+     height: 400px;
+     background: linear-gradient(rgb(49, 49, 49), rgb(17, 17, 17));
+     border-radius: 10px;
+
+ }
+
+ .getstarted .card2 img
+ {
+     height: 80%;
+     width: 100%;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+ }
 
 
-}
-
-.getstarted .image-container .description p::before{
-    content: '';
-    height: 2px ;
-    width: 100px;
-    background-color: #E15352;
-    position: absolute;
-}
-.getstarted .image-container .description p::after{
-    content: '';
-       
-    height: 2px ;
-    width: 100px;
-    background-color: #E15352;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-
-}
 
  
