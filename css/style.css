@@ -571,6 +571,55 @@ body{
      border-top-right-radius: 10px;
  }
 
+ .getstarted .cards .card .imagesection img{
+     height: 50px;
+     width: 50px;
+     border: 1px solid white;
+     border-radius: 50%;
+     padding: 5px;
+ }
 
+ .getstarted .cards .card .imagesection
+ {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+ }
+
+ .getstarted .cards .card .imagesection .name{
+     color:white;
+     display: flex;
+     flex-direction: column;
+     
+     margin-left: 15px ;
+     
+ }
+
+ .getstarted .cards .card .imagesection .name span{
+
+    font-size: 10px;
+
+ }
+
+ .getstarted .expert .image {
+     height: 500px;
+     width: 800px;
+ }
+
+ .getstarted .expert .image img{
+     height: 80%;
+     width: 100%
+ }
+ .getstarted .expert .image h6{
+     color: #B34040;
+     font-size: 15px;
+     margin-top: 20px;
+     margin-left: 20px;
+
+ }
+ .getstarted .expert .image span
+ {
+     margin-left: 20px;
+ }
 
  
