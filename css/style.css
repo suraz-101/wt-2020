@@ -737,3 +737,29 @@ button:hover {
     color: white;
     text-decoration: none;
 }
+
+
+.footer .seconddiv .left{
+ padding-right: 170px;
+}
+.footer .seconddiv .middle, .right
+{
+    display: block;
+ 
+    line-height: 2.5rem;
+}
+
+@media only screen and (max-width: 800px){
+    
+
+   
+    .header .hamburger
+    {
+        display: block;
+      
+    }
+
+    .header .links{
+        display: none;
+    }
+}
